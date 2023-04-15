@@ -1,0 +1,63 @@
+* {
+  background-color: aliceblue;
+  font-family: "DynaPuff", cursive;
+}
+
+#joke-generator section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.random-joke.active {
+  margin-top: 19px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.generate-joke {
+  cursor: pointer;
+  height: 40px;
+  width: 80px;
+}
+
+.loading {
+  display: none;
+  height: 50px;
+  width: 50px;
+  margin-top: 19px;
+}
+
+.credit {
+  font-size: 10px;
+}
+
+.credit a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 999px) {
+  #joke-generator section {
+    padding: 30px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .generate-joke {
+    height: 40px;
+    width: 80px;
+  }
+
+  .random-joke {
+    text-align: center;
+  }
+}
